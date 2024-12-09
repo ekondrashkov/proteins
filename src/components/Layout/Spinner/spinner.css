@@ -1,0 +1,20 @@
+@keyframes spinner {  
+  from {
+    transform: rotateZ(45deg);
+  }
+
+  to {
+    transform: rotateZ(405deg);
+  }
+}
+
+.spinner {  
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-top: 8px solid rgba(60, 134, 244, 0.2);
+  border-right: 8px solid rgba(60, 134, 244, 0.2);
+  border-bottom: 8px solid rgba(60, 134, 244, 0.2);
+  border-left: 8px solid #fff;
+  animation: spinner 1s infinite linear;
+}

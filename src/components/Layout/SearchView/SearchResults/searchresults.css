@@ -1,0 +1,175 @@
+.searchResults {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1540px;
+  min-width: 900px;
+  max-height: 100%;
+  height: calc(100vh - 147px);
+  margin: 0 auto;
+  padding: 0 130px;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: var(--blue-FF);
+  border-radius: 7px;
+}
+
+.searchDescr {
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--gray-2B);
+}
+
+.table {
+  width: 100%;
+  max-height: calc(100% - 50px);
+  position: relative;
+}
+
+.tableHeader {
+  min-width: 100%;
+  width: 100%;
+  position: sticky;
+  top: -20px;
+  background-color: var(--white);
+}
+
+.tableHeaderRow {
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 2px;
+  border-radius: 8px;
+  position: sticky;
+  top: 0;
+}
+
+.thIndex {
+  width: 4%;
+}
+
+.thEntry {
+  width: 10%;
+}
+
+.th {
+  width: 16%;
+}
+
+.thOrganism {
+  width: 18%;
+}
+
+.thSub {
+  width: 20%;
+}
+
+.thItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  column-gap: 12px;
+  min-width: 100%;
+  padding: 8px 12px;
+  background-color: var(--gray-F5);
+}
+
+.thItemNoSort {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  column-gap: 12px;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--gray-F5);
+}
+
+.thItemLeft {
+  width: 4%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 12px 19px;
+  column-gap: 0px;
+  justify-content: center;
+}
+
+.thItemRight {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.thTitle {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--black);
+}
+
+.sortBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border-radius: 2px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sortBtnActive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: var(--blue-F4);
+  border-radius: 2px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.rotate {
+  transform: rotateZ(180deg);
+}
+
+.sortBtn svg {
+  fill: var(--gray-BF);
+  transition: fill 0.2s ease-in-out;
+}
+
+.sortBtnActive svg {
+  fill: var(--blue-btn);
+}
+
+.sortBtn:hover,
+.sortBtn:active {
+  background-color: var(--blue-F4);
+}
+
+.sortBtn:hover svg,
+.sortBtn:active svg {
+  fill: var(--blue-btn);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 16px;
+  }
+}

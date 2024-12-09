@@ -1,0 +1,120 @@
+.dropdown {
+  position: absolute;
+  bottom: -580px;
+  right: 0; 
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  background-color: var(--white);
+  border: 1px solid var(--gray-D9);
+  border-radius: 12px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 21px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--black);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-bottom: 50px;
+}
+
+.label,
+.optionWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.optionWrapper {
+  position: relative;
+}
+
+.filterName {
+  margin-bottom: 1px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gray-2B);
+}
+
+.input,
+.chooseBtn {
+  width: 300px;
+  padding: 16px 11px;
+  background-color: var(--gray-F5);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gray-2B);
+}
+
+.chooseBtn {
+  position: relative;
+  justify-content: flex-start;
+}
+
+.chooseBtn svg {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rangeWrapper,
+.buttonsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputRange {
+  width: 130px;
+  padding: 16px 11px;
+  background-color: var(--gray-F5);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gray-2B);
+}
+
+.delim {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: var(--gray-9F);
+}
+
+.cancelBtn {
+  padding: 10px;
+  width: 140px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--blue-btn);
+  background-color: var(--white);
+}
+
+.applyBtn {
+  padding: 10px;
+  width: 140px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--blue-btn);
+  background-color: var(--blue-F4);
+}

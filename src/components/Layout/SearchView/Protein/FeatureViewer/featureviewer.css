@@ -1,0 +1,17 @@
+.uniprot {
+  max-width: 100%;
+}
+
+.featureViewer {
+  max-width: 100%;
+  overflow-y: scroll;
+}
+
+.featureViewer::-webkit-scrollbar {
+  width: 7px;
+}
+
+.featureViewer::-webkit-scrollbar-thumb {
+  background-color: var(--blue-FF);
+  border-radius: 7px;
+}

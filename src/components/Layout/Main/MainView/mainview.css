@@ -1,0 +1,44 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-self: flex-end;
+  width: 300px;
+  padding-top: 162px;
+}
+
+.title {
+  margin-bottom: 11px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--black);
+}
+
+.descr {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gray-61);
+}
+
+.loginBtn {
+  padding: 16px;
+  width: 158px;
+  border-radius: 24px;
+  background-color: var(--white);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--blue-C0);
+  transition: background-color .2s ease-in-out;
+}
+
+.loginBtn:focus,
+.loginBtn:hover,
+.loginBtn:active {
+  background-color: var(--blue-F4);
+}

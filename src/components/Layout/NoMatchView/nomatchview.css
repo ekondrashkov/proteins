@@ -1,0 +1,43 @@
+.noMatchWrapper {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1540px;
+  max-height: 100%;
+  height: calc(100vh - 50px);
+  margin: 0 auto;
+  padding: 0 130px;
+}
+
+.errorNum {
+  margin: 0;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 100%;
+}
+
+.errorMessage {
+  display: block;
+  margin-bottom: 19px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--gray-9F);
+}
+
+.toSearchBtn {
+  padding: 16px;
+  width: 158px;
+  background-color: var(--blue-FF);
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--black);
+}

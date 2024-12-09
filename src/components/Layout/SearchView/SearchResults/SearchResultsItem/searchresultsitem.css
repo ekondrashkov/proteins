@@ -1,0 +1,100 @@
+.itemRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.itemContent {
+  width: 16%;
+  padding: 14.5px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gray-2B);
+}
+
+.itemContentEntry {
+  width: 10%;
+  padding: 14.5px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gray-2B);
+}
+
+.itemContentSub {
+  width: 20%;
+  padding: 14.5px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gray-2B);
+}
+
+.itemContentOrganism {
+  width: 18%;
+  padding: 14.5px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gray-2B);
+}
+
+.itemContentIndex {
+  width: 4%;
+  padding: 14.5px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gray-2B);
+}
+
+.itemIndex {
+  display: block;
+  text-align: center;
+}
+
+.itemEntry {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--blue-C0);
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.itemOrganism {
+  display: inline-block;
+  max-width: 100%;
+  padding: 2px 12px;
+  border-radius: 12px;
+  background-color: var(--blue-FF);
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.itemEntryNames,
+.itemGenes {
+  width: 100%;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.itemSubcelLoc {
+  display: block;
+  max-width: 170px;
+  height: 40px;
+  max-height: 40px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

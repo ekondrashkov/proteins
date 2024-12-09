@@ -1,0 +1,101 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 24px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--black);
+}
+
+.sequenceData {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  column-gap: 21px;
+  margin-bottom: 15px;
+}
+
+.sequenceDataCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 180px;
+}
+
+.sequenceDataColTitle {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gray-61);
+}
+
+.sequenceDataColValue {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gray-2B);
+}
+
+.sequenceValue {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--gray-F2);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--black);
+  word-wrap: break-word;
+}
+
+.clipboardBtn {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+.clipboardBtn svg {
+  fill: var(--black);
+  transition: fill .2s ease-in-out;
+}
+
+.clipboardBtnText {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--black);
+  transition: color .2s ease-in-out;
+}
+
+.clipboardBtn:focus .clipboardBtnText,
+.clipboardBtn:hover .clipboardBtnText,
+.clipboardBtn:active .clipboardBtnText {
+  color: var(--blue-btn);
+}
+
+.clipboardBtn:focus svg,
+.clipboardBtn:hover svg,
+.clipboardBtn:active svg {
+  fill: var(--blue-btn);
+}
+

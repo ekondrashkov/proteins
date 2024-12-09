@@ -1,0 +1,59 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid var(--blue-FF);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1540px;
+  min-width: 900px;
+  margin: 0 auto;
+  padding: 16px 130px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--blue-C0);
+  user-select: none;
+}
+
+.usedData {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 30px;
+  align-items: center;
+  padding-right: 23px;
+}
+
+.email {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gray-2B);
+}
+
+.logOutBtn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--blue-D2);
+}
+
+.logOutBtn:hover,
+.logOutBtn:focus-visible {
+  color: var(--blue-btn);
+}
+
+.logOutBtn:active {
+  color: var(--blue-C0);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,54 @@
+.setings {
+  position: relative;
+  min-width: 40px;
+  height: 40px;
+  margin-left: 13px;
+}
+
+.searchSettingsBtn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-F4);
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.searchSettingsBtn:disabled {
+  background-color: var(--gray-BF);
+  cursor: initial;
+}
+
+.searchSettingsBtn:not(:disabled):focus,
+.searchSettingsBtn:not(:disabled):hover,
+.searchSettingsBtn:not(:disabled):active {
+  background-color: var(--blue-btn);
+}
+
+.searchSettingsBtn svg {
+  fill: var(--blue-btn);
+  transition: fill 0.2s ease-in-out;
+}
+
+.searchSettingsBtn:disabled svg {
+  fill: var(--white);
+  transition: fill 0.2s ease-in-out;
+}
+
+.searchSettingsBtn:focus svg,
+.searchSettingsBtn:hover svg,
+.searchSettingsBtn:active svg {
+  fill: var(--white);
+}
+
+.filtersActive {
+  position: absolute;
+  right: -3px;
+  top: -4px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--blue-btn);
+  border-radius: 50%;
+}
